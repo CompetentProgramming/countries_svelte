@@ -41,3 +41,14 @@
 body {
     font: 600 14px/20px 'Nunito Sans', sans-serif;
 }
+
+.select-container {
+    width: 200px;
+    --border: 0;
+}
+
+.dark .select-container {
+    --background: var(--dark-light);
+    --listBackground: var(--dark-light);
+    --itemHoverBG: var(--dark-bg);
+}
