@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
     mode: 'jit',
     purge: [
@@ -6,7 +7,8 @@ module.exports = {
     darkMode: 'class',
     theme: {
         colors: {
-            'dark-light': 'hsl(209, 23%, 22%)'
+            'dark-light': 'hsl(209, 23%, 22%)',
+            'white': colors.white
         },
     },
 }

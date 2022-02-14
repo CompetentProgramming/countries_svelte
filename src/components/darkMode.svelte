@@ -1,8 +1,6 @@
 <script>
-    let isThemeDark = false;
     function changeTheme() {
-        isThemeDark = localStorage.theme === 'dark';
-        if (isThemeDark) {
+        if (localStorage.theme === 'dark') {
             document.documentElement.classList.remove('dark');
             localStorage.theme = 'light';
 
@@ -13,11 +11,7 @@
     }
 </script>
 
-<button on:click={changeTheme}>
-    {#if isThemeDark}
-        <i class="far far-moon"></i>
-    {:else}
-        <i class="fas fa-moon"></i>
-    {/if}
+<button class="dark-mode" on:click={changeTheme}>
+    <i class="fa-solid fa-moon"></i>
     Dark mode
 </button>

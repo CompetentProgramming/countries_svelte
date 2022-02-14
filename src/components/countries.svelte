@@ -41,8 +41,8 @@
         <div class="rounder-md shadow-md">
             <div class="image bg-no-repeat bg-cover bg-center" style="background-image: url('{country.image}');"></div>
             <div class="p-6 dark:dark-light">
-                <h2 class="text-lg mb-3 truncate">{ country.nativeName }</h2>
-                <p>Population: {country.population.toLocaleString()}</p>
+                <h2 class="text-lg mb-3 truncate"><a href={'/' + country.id}>{ country.nativeName }</a></h2>
+                <p>Population: {country.population}</p>
                 <p>Region: {country.region}</p>
                 <p>Capital: {country.capital}</p>
             </div>
